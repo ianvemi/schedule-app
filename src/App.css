@@ -1,0 +1,255 @@
+*{
+  font-family: 'Raleway', sans-serif;
+}
+
+*::selection {
+  background-color: rgba(255,255,255,0.3);
+  color: white;
+  
+}
+
+body{
+  background: url("./img/background.webp");
+  background-size: auto;
+  height: fit-content;
+}
+
+body::-webkit-scrollbar{
+  width: 0rem;
+}
+
+h1{
+  color: white;
+}
+
+h2{
+  color: white;
+  font-weight: 400;
+  
+}
+
+h3{
+  padding: 1rem;
+  color: white;
+  font-weight: 400;
+  margin: 0;
+}
+
+button{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  border: none;
+  outline: none;
+}
+
+.app{
+  display: flex;
+  flex-direction: row;
+}
+.Window{
+  background-color: rgba(255,255,255,0.06);
+  backdrop-filter: blur(15px);
+  border: solid 1px rgba(255,255,255,0.3);
+  border-radius: 2rem;
+  width: 37%;
+  margin-top: 2rem;
+  margin-left: 5rem;
+  overflow: hidden;
+  flex-basis: 30%;
+  height: fit-content;
+}
+
+.title{
+  display: block;
+  padding-left: 3rem;
+  margin: 1rem;
+  font-size: 2rem;
+}
+
+.Form{
+  background-color: rgba(255,255,255,0);
+}
+
+.Form h2{
+  padding: 2rem;
+  font-size: 2rem;
+  width: 100%;
+  background-color: rgba(255,255,255,0.18);
+}
+
+.Form label{
+  
+  color: rgba(255, 255, 255, 0.774);
+  font-size: 1rem;
+}
+
+.Form input{
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  background-color: rgba(255,255,255,0);
+  color: rgb(255, 255, 255);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  border: none;
+  border-bottom: 2px solid rgb(255, 255, 255, 0.5);
+  font-size: 1.1rem;
+  padding: 0.3rem;
+  width: 100%;
+  margin-bottom: 2rem;
+  margin-top: 0.2rem;
+
+}
+
+.Form input:focus{
+  background-color: rgba(255,255,255,0.1);
+}
+
+.Form form{
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+}
+
+.Form button{
+  background: none;
+  border: solid 1px rgba(255,255,255,0.2);
+  color: azure;
+  padding: 0.7rem;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  border-radius: 0.6rem;
+  transition: all 400ms;
+  
+
+}
+
+.Form button:hover{
+  background-color: rgba(255,255,255,0.2);
+}
+
+.Form p{
+  padding: 0.8rem;
+  color: white;
+  background-color: rgba(255, 107, 107, 0.877);
+  border-radius: 1rem;
+}
+
+.null{
+  display: none;
+}
+.button{
+  display: flex;
+  justify-content:flex-end;
+}
+
+.quotes{
+  flex-basis: 70%;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: scroll;
+  height: calc(100vh - 3rem);
+}
+
+.quotes::-webkit-scrollbar{
+  width: 0.4rem;
+  background-color: rgba(255,255,255,0.1);
+}
+
+.quotes::-webkit-scrollbar-thumb{
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 5rem;
+}
+
+.quote{
+  background-color: rgba(255,255,255,0.09);
+  backdrop-filter: blur(15px);
+  border: solid 1px rgba(255,255,255,0.1);
+  height: fit-content;
+  color: white;
+  border-radius: 0.5rem;
+  margin-left: 3rem;
+  width: fit-content;
+  margin-bottom: 2rem;
+}
+
+.quote p{
+ padding: 0.3rem;
+ margin-left: 1rem;
+ margin-right: 2rem;
+ font-size: 1.1rem;
+}
+
+.quote span{
+  display: block;
+  font-size: 0.65rem;
+  margin-bottom: 0.25rem;
+  letter-spacing: 0.1rem;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.head{
+  background-color: rgba(255,255,255,0.2);
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items:center;
+}
+
+.head button{
+  background-color: rgba(255,255,255,0);
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: aliceblue;
+  height: max-content;
+  margin: 0;
+  margin-left: auto;
+}
+
+.head button:hover{
+  background-color: rgba(255,255,255,0.5);
+  color: rgb(31, 133, 31);
+}
+
+/*RESPONSIVE*/
+@media (max-width: 1450px) {
+  .Window{
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .Window{
+    flex-basis: 60%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .app{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Window{
+    width: 80%;
+    margin-right: 5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .app{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Window{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .title{
+    padding-left: 0rem;
+    margin: 0rem;
+
+  }
+}
